@@ -1,7 +1,7 @@
 import requests
 import json
 def adicionar():
-    xason = {"name": "Braba", "age": "21"}
+    xason = [{"name": "Braba", "age": "21"}]
     headers = {"Content-type":"application/json"}
     r = requests.post('http://localhost:8081/order',data=json.dumps(xason),headers=headers)
     return r.status_code
